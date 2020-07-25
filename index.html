@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+body{
+    text-align: center;
+    background-color: rgba(76, 17, 99, 0.925);
+    font-family: sans-serif;
+}
+#list{
+    list-style: none;
+}
+h1{
+    color: rgb(238, 238, 238);
+}
+.main{
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px 1px white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 70px;
+    background-color: white;
+    background-image: url(pic3.jpg);
+    margin-top: 40px;
+    margin-right: 0;
+}
+button{
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.322);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 5px;
+}
+button:hover{
+    background-color: white;
+    
+}
+button:active{
+    background-color: rgba(255, 255, 255, 0.514);
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.btn{
+    position: relative;
+    left:70px;
+    margin: 2px;
+}
+.li1{
+    color: yellow;
+    position: relative;
+    right: 30px;
+}
+ul{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>TODO LIST</h1>
+        </div>
+        <div>
+            <input placeholder="Enter Todo" type="text" id="todo-item">
+            <button onclick="addItem()">add item</button>
+            <button onclick="delete_All()">Delete All</button>
+        </div>
+       
+        <div>
+            <ul  id="list">
+
+            </ul>
+        </div>
+        
+    </div>
+    
+            <div>
+                <h1>Made by SaeedAnwer</h1>
+            </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
